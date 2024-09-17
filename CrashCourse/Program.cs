@@ -15,58 +15,70 @@ namespace CrashCourse
     {
         static void Main(string[] args)
         {
+            bool toLoop = true;
             Console.WriteLine("[1] \n[2]\n[3]\n" +
                 "[4]\n[5]\n[6]\n" +
                 "[7]\n[8]\n[9]\n" +
                 "[10]\n[11]\n[12]\n" +
                 "[13]\n[14]\n[15]\n" +
                 "[16]\n[17]\n[18]\n" +
-                "[19]\n[20]\n");
-            Console.Write("Pick a Lesson: "); 
-            int pick = Convert.ToInt32(Console.ReadLine());
+                "[19]\n[20]\n[-1]Exit");
 
-            if (pick ==1)
+            while (toLoop)
             {
-                ccFunction.lesson1();
-            }
-            else if (pick == 2)
-            {
-                ccFunction.lesson2();
-            }
-            else if (pick == 3)
-            {
-                ccFunction.lesson3();
-            }
-            else if (pick == 4)
-            {
-                ccFunction.lesson4();
-            }
-            else if (pick == 5)
-            {
-                ccFunction.lesson5();
-            }
-            else if (pick == 6)
-            {
-                ccFunction.lesson6();
-            }
-            else if (pick == 7)
-            {
-                ccFunction.lesson7();
-            }
-            else if (pick == 8)
-            {
-                ccFunction.lesson8();
-            }
-            else if (pick == 9)
-            {
-                ccFunction.lesson9();
-            }
-            if (pick > 20)
-            {
-                Console.WriteLine("The Introduction to C# Language only has 20 lessons.");
-            }
-            else { Console.WriteLine("Other Lessons are to Follow :)"); }
+                Console.Write("Pick a Lesson: ");
+                int pick = Convert.ToInt32(Console.ReadLine());
+                if (pick == -1)
+                {
+                    toLoop = false;
+                    Console.WriteLine("That is all! Thank you!");
+                }
 
+                if (pick == 1)
+                {
+                    L1Function.Lesson1();
+                }
+                else if (pick == 2)
+                {
+                    L2Function.Lesson2();
+                }
+                else if (pick == 3)
+                {
+                    L3Function.Lesson3();
+                }
+                else if (pick == 4)
+                {
+                    L4Function.Lesson4();
+                }
+                else if (pick == 5)
+                {
+                    L5Function.Lesson5();
+                }
+                else if (pick == 6)
+                {
+                    L6Function.Lesson6();
+                }
+                else if (pick == 7)
+                {
+                    L7Function.Lesson7();
+                }
+                else if (pick == 8)
+                {
+                    L8Function.Lesson8();
+                }
+                else if (pick == 9)
+                {
+                    L9Function.Lesson9();
+                }
+                else if (pick == 10)
+                {
+                    L10Function.Lesson10();
+                }
+                if (pick > 20)
+                {
+                    Console.WriteLine("The Introduction to C# Language only has 20 lessons.");
+                }
+            }
 
         }
 

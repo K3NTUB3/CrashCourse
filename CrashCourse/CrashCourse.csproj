@@ -43,7 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ccFunction.cs" />
+    <Compile Include="L10Function.cs" />
+    <Compile Include="L1Function.cs" />
+    <Compile Include="L2Function.cs" />
+    <Compile Include="L3Function.cs" />
+    <Compile Include="L4Function.cs" />
+    <Compile Include="L5Function.cs" />
+    <Compile Include="L6Function.cs" />
+    <Compile Include="L7Function.cs" />
+    <Compile Include="L8Function.cs" />
+    <Compile Include="L9Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
