@@ -82,6 +82,10 @@ namespace CrashCourse
                 {
                     L12Function.Lesson12();
                 }
+                else if (pick == 13)
+                {
+                    L13Function.Lesson13();
+                }
                 if (pick > 20)
                 {
                     Console.WriteLine("The Introduction to C# Language only has 20 lessons.");
