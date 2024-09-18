@@ -26,7 +26,7 @@ namespace CrashCourse
 
             while (toLoop)
             {
-                Console.Write("Pick a Lesson: ");
+                Console.Write("\nPick a Lesson: ");
                 int pick = Convert.ToInt32(Console.ReadLine());
                 if (pick == -1)
                 {
@@ -73,6 +73,10 @@ namespace CrashCourse
                 else if (pick == 10)
                 {
                     L10Function.Lesson10();
+                }
+                else if (pick == 11)
+                {
+                    L11Function.Lesson11();
                 }
                 else if (pick == 12)
                 {
