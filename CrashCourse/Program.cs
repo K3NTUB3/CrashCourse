@@ -16,13 +16,13 @@ namespace CrashCourse
         static void Main(string[] args)
         {
             bool toLoop = true;
-            Console.WriteLine("[1] \n[2]\n[3]\n" +
-                "[4]\n[5]\n[6]\n" +
-                "[7]\n[8]\n[9]\n" +
-                "[10]\n[11]\n[12]\n" +
-                "[13]\n[14]\n[15]\n" +
-                "[16]\n[17]\n[18]\n" +
-                "[19]\n[20]\n[-1]Exit");
+            Console.WriteLine("[1]Hello World \n[2]Variables and DataTypes\n[3]Basic Input/Output\n" +
+                "[4]Operators and Expression\n[5]Conditional Statement\n[6]Switch Statement\n" +
+                "[7]Loops\n[8]Arrays\n[9]Functions\n" +
+                "[10]Object-Oriented Programming\n[11]Inheritance\n[12]Encapsulation\n" +
+                "[13]Polymorphism\n[14]Abstraction\n[15]Exception Handling\n" +
+                "[16]Collections\n[17]Delegates and Events\n[18]Asynchronous Programming\n" +
+                "[19]Working with Strings\n[20]Final Output\n[-1]Exit");
 
             while (toLoop)
             {
