@@ -33,6 +33,10 @@ namespace CrashCourse
                     toLoop = false;
                     Console.WriteLine("That is all! Thank you!");
                 }
+                if (pick > 20)
+                {
+                    Console.WriteLine("The Introduction to C# Language only has 20 lessons.");
+                }
 
                 if (pick == 1)
                 {
@@ -86,10 +90,15 @@ namespace CrashCourse
                 {
                     L13Function.Lesson13();
                 }
-                if (pick > 20)
+                else if (pick == 14)
                 {
-                    Console.WriteLine("The Introduction to C# Language only has 20 lessons.");
+                    L14Function.Lesson14();
                 }
+                else
+                {
+                    Console.WriteLine("Other lessons are to Follow :)");
+                }
+                
             }
 
         }
