@@ -32,8 +32,8 @@ namespace CrashCourse
                 if (bool.TryParse(input, out isIn))
                 {
                     Inventory inv = new Inventory(prodnum, prodname, prodtype, isIn);
-                    inv.DisplayInventory();
                     inv.IsItemIn();
+                    inv.DisplayInventory();
                     toLoop = false;
                 }
                 else
@@ -42,7 +42,7 @@ namespace CrashCourse
                 }
             } while (toLoop);
 
-            Console.WriteLine("That is it for Lesson 12!\n\n");
+            Console.WriteLine("\nThat is it for Lesson 12!\n\n");
 
         }
     }
@@ -61,41 +61,40 @@ namespace CrashCourse
         public string ProductNumber
         {
             get { return productNumber; }
-            private set { productNumber = value; }
+            set { productNumber = value; }
         }
         public string ProductName
         {
             get { return productName; }
-            private set { productName = value; }
+            set { productName = value; }
         }
         public string ProductType
         {
             get { return productType; }
-            private set { productType = value; }
+            set { productType = value; }
         }
         public bool IsIn
         {
             get { return isIn; }
-            private set { isIn = value; }
+            set { isIn = value; }
         }
         public void IsItemIn()
         {
             if (isIn)
             {
-                Console.WriteLine("\nYou have added item stocks in the Inventory.");
+                Console.WriteLine("\nYou have added item stocks in the Inventory. Here is the details: \n");
             }
             else
             {
-                Console.WriteLine("\nYou have added a new item in the Inventory.");
+                Console.WriteLine("\nYou have added a new item in the Inventory. Here is the details: \n");
             }
         }
 
         public void DisplayInventory()
         {
-            Console.WriteLine("\n\nProduct Number : " + ProductNumber);
+            Console.WriteLine("Product Number : " + ProductNumber);
             Console.WriteLine("Product Name   : " + ProductName);
             Console.WriteLine("Product Type   : " + ProductType);
-            Console.WriteLine("Item In?       : " + isIn);
         }
     }
 }
