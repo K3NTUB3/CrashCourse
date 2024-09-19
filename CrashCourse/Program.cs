@@ -107,9 +107,10 @@ namespace CrashCourse
                 {
                     L17Function.Lesson17();
                 }
-                else
+                else if (pick == 18)
                 {
-                    Console.WriteLine("Other lessons are to Follow :)");
+                    L18Function.Lesson18();
+                    Console.ReadKey();
                 }
                 
             }
