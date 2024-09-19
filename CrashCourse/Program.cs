@@ -97,6 +97,11 @@ namespace CrashCourse
                 else if (pick == 15)
                 {
                     L15Function.Lesson15();
+
+                }
+                else if (pick == 16)
+                {
+                    L16Function.Lesson16();
                 }
                 else
                 {
