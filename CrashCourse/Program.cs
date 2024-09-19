@@ -112,7 +112,12 @@ namespace CrashCourse
                     L18Function.Lesson18();
                     Console.ReadKey();
                 }
-                
+                else if (pick == 19)
+                {
+                    L19Function.Lesson19();
+                    Console.ReadKey();
+                }
+
             }
 
         }
