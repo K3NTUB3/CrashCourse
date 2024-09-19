@@ -103,6 +103,10 @@ namespace CrashCourse
                 {
                     L16Function.Lesson16();
                 }
+                else if (pick == 17)
+                {
+                    L17Function.Lesson17();
+                }
                 else
                 {
                     Console.WriteLine("Other lessons are to Follow :)");
