@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="L20Function.cs" />
     <Compile Include="L10Function.cs" />
     <Compile Include="L11Function.cs" />
     <Compile Include="L12Function.cs" />

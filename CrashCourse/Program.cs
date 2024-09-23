@@ -22,13 +22,13 @@ namespace CrashCourse
                 "[10]Object-Oriented Programming\n[11]Inheritance\n[12]Encapsulation\n" +
                 "[13]Polymorphism\n[14]Abstraction\n[15]Exception Handling\n" +
                 "[16]Collections\n[17]Delegates and Events\n[18]Asynchronous Programming\n" +
-                "[19]Working with Strings\n[20]Final Output\n[-1]Exit");
+                "[19]Working with Strings\n[20]Final Output\n[0]Exit");
 
             while (toLoop)
             {
                 Console.Write("\nPick a Lesson: ");
                 int pick = Convert.ToInt32(Console.ReadLine());
-                if (pick == -1)
+                if (pick == 0)
                 {
                     toLoop = false;
                     Console.WriteLine("That is all! Thank you!");
@@ -116,6 +116,10 @@ namespace CrashCourse
                 {
                     L19Function.Lesson19();
                     Console.ReadKey();
+                }
+                else if (pick == 20)
+                {
+                    L20Function.Lesson20();
                 }
 
             }
